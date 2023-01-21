@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form-slide input{
+    display: block;
+    z-index: 10;
+    margin-left: 30px;
+    position: fixed;
+    top:45%;
+    transform: translateY(-50%);
+    width: 200px;
+    left:-88px;
+    height: 18px;
+   outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.form-slide input:checked::before{
+    content: "" attr(title) "";
+    z-index: 20;
+    position: absolute;
+    left:120px;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.5s ease;
+    font-weight: bold;
+
+}
+.form-slide input::after{
+    content: " ";
+    z-index: 20;
+    position: absolute;
+    left:91px;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(21, 255, 0);
+    border-radius: 100%;
+    transition: all 0.5s ease;
+
+}
+.form-slide input:checked::after{
+    background-color:#fff;
+    transition: all 0.5s ease;
+}
+input[id="s2"]{
+    top:50%;
+}
+input[id="s3"]{
+    top:55%;
+}
+input[id="s4"]{
+    top:60%;
+}
+input[id="s5"]{
+    top:65%;
+}
+.div-section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    color:#fff;
+}
+.div-section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+    background-color: tomato;
+    transition: all 1s ease;
+}
+.div-section div h1{
+    transition: all 2s ease; 
+}
+.div-section div:nth-child(odd){
+    background-color:rgb(69, 69, 236);
+}
+input[id="s2"]:checked ~ .div-section div{
+    transform: translatey(0%);
+    }
+input[id="s2"]:checked ~ .div-section div{
+transform: translatey(-100%);
+}
+input[id="s3"]:checked ~ .div-section div{
+    transform: translatey(-200%);
+    }
+input[id="s4"]:checked ~ .div-section div{
+transform: translatey(-300%);
+}
+input[id="s5"]:checked ~ .div-section div{
+    transform: translatey(-400%);
+    }

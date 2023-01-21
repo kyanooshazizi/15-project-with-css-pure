@@ -1,0 +1,28 @@
+.btn{
+  position: absolute;
+  left: 50%;
+  top:20%;
+   background-color: rgb(63, 63, 255);
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   width: 200px;
+   align-items: center;
+   border: none;
+   padding: 8px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+.btn i{
+    font-size:16px;
+    animation:mog 1s linear infinite;
+    border-radius: 50%;
+}
+@keyframes mog{
+    0%{
+        box-shadow:0 0 0 0 rgba(255, 255, 255, 0.1),0 0 0 10px rgba(255, 255, 255, 0.1),0 0 0 20px rgba(255, 255, 255, 0.1),0 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+    100%{
+        box-shadow:0 0 0 30px rgba(255, 255, 255, 0.1),0 0 0 50px rgba(255, 255, 255,0.1),0 0 0 70px rgba(255, 255, 255,0.1),0 0 0 90px rgba(255, 255, 255,0.1);
+    }
+}

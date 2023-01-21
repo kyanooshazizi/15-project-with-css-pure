@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(112, 112, 255);
+}
+.wrapper{
+    width: 600px;
+    height: 350px;
+    border-bottom: 5px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.machin{
+    background-image: url("1514496714\ \(1\).svg");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    font-size: 100px;
+   position: absolute;
+   bottom: 0px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+   animation: car 1s ease infinite;
+}
+@keyframes car{
+    0%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(-1px);
+    }
+}
+.tree{
+    background-image: url("simple-tree.svg");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    font-size: 100px;
+   position: absolute;
+   bottom: 20px;
+   left: 100%;
+   animation: play 5s linear infinite;
+  
+}
+@keyframes play{
+    0%{
+       transform: translateX(400px);
+    }
+
+    100%{
+        transform: translateX(-400%);
+    }
+}
+.mountain{
+    background-image: url("Mountains-By-The-Icon-Z-3322972.svg");
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80%;
+   position: absolute;
+   bottom: -20px;
+   left: 100%;
+   z-index: 10;
+   animation: playm 5s linear infinite;
+}
+@keyframes playm{
+    0%{
+       transform: translateX(100px);
+    }
+
+    100%{
+        transform: translateX(-350%);
+    }
+}

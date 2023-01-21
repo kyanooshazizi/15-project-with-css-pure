@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+.wrapper{
+background-color: #1cf803;
+width: 70vw;
+height: 70vh;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+position: absolute;
+}
+.wrapper .title{
+    margin: 5px auto;
+    background-color:  #a0a49f24;
+    width: 40%;
+    padding: 8px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.gallery{
+    position: absolute;
+    width: 96%;
+    height: 85%;
+    background-color: #ffffff;
+    bottom: 6%;
+   left: 2%;
+}
+[class*="img-show"]{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+    transition: all 1s linear;
+}
+.wrapper input[type="radio"] ~ label{
+    width:15px;
+    height:15px;
+    background-color: rgb(232, 236, 227);
+    border-radius: 100%;
+    z-index:10;
+    position: absolute;
+    cursor: pointer;
+}
+.wrapper input[type="radio"] ~ label[for=im1]{
+bottom: 2%;
+left: 45%;
+}
+.wrapper input[type="radio"] ~ label[for=im2]{
+    bottom: 2%;
+    left: 50%;
+    }
+.wrapper input[type="radio"] ~ label[for=im3]{
+    bottom: 2%;
+    left: 55%;
+    }
+input[type="radio"]{
+display: none;
+    }
+    .wrapper #im1:checked ~ label[for=im1],.wrapper #im2:checked ~ label[for=im2],.wrapper #im3:checked ~ label[for=im3]{
+        background-color: rgb(3, 141, 17);
+    }  
+.gallery .img-show1{
+    left:0%;
+}
+.gallery .img-show2{
+    left:100%;
+} 
+.gallery .img-show3{
+    left:200%;
+}
+.gallery [class*="img-show"]{
+    transition: all 1s ease-in-out;
+}
+.wrapper #im2:checked ~ .gallery [class*="img-show"]{
+transform: translate(-100%);
+}
+.wrapper #im3:checked ~ .gallery [class*="img-show"]{
+    transform: translate(-200%);
+    }
+#arrow{
+    position: absolute;
+    z-index: 100;
+    top:50%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #1cf803;
+    padding: 3px;
+    border-radius: 50%;
+}
+#arrowl{
+    position: absolute;
+    z-index: 100;
+    top:50%;
+    left: 5%;
+    cursor: pointer;
+    font-size: 28px;
+    background-color: #1cf803;
+    padding: 3px;
+    border-radius: 50%;
+}
+

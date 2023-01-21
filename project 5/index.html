@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="wrapper">
+        <p class="title">گالری تصاویر و محصولات</p>
+        <input type="radio" id="im1" name="figure" checked>
+        <label for="im1"></label>
+        <input type="radio" id="im2" name="figure">
+        <label for="im2"></label>
+        <input type="radio" id="im3" name="figure">
+        <label for="im3"></label>
+        <!-- gallery -->
+        <div class="gallery">
+            <div class="img-show1">
+                <img src="../project 4/img/img1.jpeg" alt="">
+             </div>
+             <div class="img-show2">
+                 <img src="../project 4/img/img2.jpg" alt="">
+              </div>
+              <div class="img-show3">
+                 <img src="../project 4/img/img3.jpg" alt="">
+              </div>
+              <span class="material-symbols-outlined" id="arrow" onclick="galleryright()">
+                double_arrow
+                </span>
+                <span id="arrowl" class="material-symbols-outlined" onclick="galleryleft()">
+                    keyboard_double_arrow_left
+                    </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
